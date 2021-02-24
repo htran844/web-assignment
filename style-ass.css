@@ -1,0 +1,358 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.current {
+	background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+	border-radius: 15px;
+}
+.body{
+	font-family: "Poppins", sans-serif;
+	height: 300vh;
+	background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+	 display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	
+}
+body{
+	position: relative;
+}
+.container{
+	margin: auto;
+	width: 80%;
+}
+
+.glass{
+	background: white;
+  	height: 280vh;
+	width: 80%;
+	background: linear-gradient(
+	    to right bottom,
+	    rgba(255, 255, 255, 0.7),
+	    rgba(255, 255, 255, 0.3)
+	  );
+	  border-radius: 2rem;
+	  z-index: 2;
+	  backdrop-filter: blur(2rem);
+}
+/* LOGO*/
+.logo img{
+	width: 200px;
+	height: 60px;
+}
+
+header{
+	display: flex;
+	justify-content: space-between;
+}
+/* nav*/
+.menu>ul{
+	list-style: none;
+	margin-top: 1rem;
+	
+}
+
+.menu ul li{
+	display: inline-table;
+	margin: 0 1rem;
+	padding: 5px;
+	position: relative;
+	transition: 0.4s ease;
+
+}
+.menu ul li a{
+	text-decoration: none;
+	color: black;
+}
+.drop-menu{	
+	list-style: none;
+	position: absolute;
+	margin-top: 5px;
+	display: none;
+}
+.drop-menu li{
+	width: 100px;
+	padding: 0px 10px;
+
+}
+.drop-menu li a{
+	display: block;
+	padding: 5px;
+}
+.menu ul li:hover{
+	background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+	border-radius: 15px;
+}
+
+.menu ul li:hover .drop-menu{
+	display: block;
+}
+
+/* nút đăng kí*/
+.sign button{
+	padding: 5px 10px;
+	margin-top: 1rem;
+	background: none;
+	border: 1px solid black;
+	border-radius: 15px;
+	transition: 0.4s ease;
+}
+.sign button a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+.sign button:hover{
+	background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+}
+
+/*Nội dung*/
+.article{
+	background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.5)
+  );
+	border-radius: 15px;
+	margin-top: 5rem;
+	height: 60vh;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%), 0 2px 10px 0 rgb(0 0 0 / 22%);
+}
+.article-2{
+	width: 90%;
+	margin: auto;
+}
+.article .article-2 h1{
+	font-size: 3rem;
+	padding-top: 4rem;
+	padding-bottom: 1rem;
+}
+.article .article-2 button{
+	margin-top: 2rem;
+	width: 100px;
+	height: 30px;
+	cursor: pointer;
+	font-weight: bold;
+	outline: none;
+	background-color: #0984e3;
+	border:none;
+	transition: 0.4s ease;
+}
+.article .article-2 button:hover{
+	background-color: #00cec9;
+}
+/* Tìm kiếm*/
+.search-item{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-item input[type="search"]{
+	width: 200px;
+	height: 30px;
+	border: 1px solid #0984e3;
+	border-radius: 2px;
+	outline: none;
+}
+.search-item input[type="search"]:focus{
+	border: 2px solid #55efc4;
+}
+.search-item input[type="submit"]{
+	width: 40px;
+	height: 30px;
+	margin-left: 5px;
+	outline: none;
+}
+.search-item input[type="submit"]:hover{
+	background-color: #55efc4;
+}
+
+/* sản phẩm*/
+.our-product{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 2rem;
+}
+.our-product h1{
+	font-size: 30px;
+}
+.item-all{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.item-all .item{
+	align-items: center;
+	margin: 10px;
+	transition: 0.4s ease;
+
+}
+.item-all .item a{
+	text-decoration: none;
+	color: black;
+}
+.item-all .item .img{
+
+	background-color: #b2bec3;
+	height: 140px;
+}
+.item-all .item img{
+	width:80%;
+	height: auto;
+}
+.item-all .item div{
+	text-align: center;
+}
+.item:hover {
+	background: white;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%), 0 2px 10px 0 rgb(0 0 0 / 22%);
+}
+.item:hover img{
+	width:100%;
+
+}
+/*dịch vụ*/
+.sevices{
+	display: flex;
+	margin-top: 5rem;
+	margin-bottom: 2rem;
+}
+.sevices-item{
+	padding: 10px;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%), 0 2px 10px 0 rgb(0 0 0 / 22%);
+}
+.sevices-item img{
+	width: 100%
+}
+/*chân trang*/
+.end-page{
+	background: linear-gradient(
+    to right bottom,
+    rgba(48, 216, 242, 0.1),
+    rgba(48, 242, 107, 0.3)
+  );
+	border-radius: 15px;
+	margin-top: 5rem;
+	height: 20vh;
+	box-shadow: 0 2px 5px 0 rgb(0 0 0 / 26%), 0 2px 10px 0 rgb(0 0 0 / 22%);
+}
+
+.end-page p{
+	padding: 20px 10px 0px 10px;
+	align-items: center;
+	text-align: center;
+}
+
+/* vòng tròn*/
+
+.circle-1{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #0984e3;
+	position: absolute;
+	top:2%;
+	right: 8%;
+}
+.circle-2{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #0984e3;
+	position: absolute;
+	top:15%;
+	right: 15%;
+}
+.circle-3{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background-color: #0984e3;
+	position: absolute;
+	top:20%;
+	right: 25%;
+}
+.circle-4{
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background-color: #00b894;
+	position: absolute;
+	top:25%;
+	left: 6%;
+}
+.circle-5{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background-color: #00b894;
+	position: absolute;
+	top:10%;
+	left: 10%;
+}
+.circle-6{
+	width: 280px;
+	height: 280px;
+	border-radius: 50%;
+	background-color: #0984e3;
+	position: absolute;
+	top:50%;
+	left: 10%;
+}
+.circle-7{
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	background-color: #0984e3;
+	position: absolute;
+	top:75%;
+	right: 15%;
+}
+.phone-number a{
+	text-decoration: none;
+	text-align: center;
+	color: black;
+}
+.phone-number{
+	text-align: center;
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+	width: 100px;
+	height: 20px;
+	background: white;
+	background: linear-gradient(to right bottom,rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+	border: 2px solid #0984e3;
+	border-radius: 12px;
+}
+.icon{
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	display: flex;
+	flex-direction: column;
+}
+.icon img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-top: 10px;
+
+}
